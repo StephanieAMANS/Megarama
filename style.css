@@ -1,4 +1,201 @@
 
+
+.aff {
+  margin-top:5%;
+}
+
+
+  .light-mode {
+    --navbar-color: yellow;
+    --navbar-bg-color: blue;  
+  }
+  .dark-mode {
+    --navbar-color: white;
+    --navbar-bg-color: #72232C;  
+  }
+  .logo {
+      width: 25%;
+  }
+  
+  * {
+    box-sizing:border-box; 
+    outline:none;
+    margin:0;
+    padding:0;
+  }
+ 
+  body {
+    margin:0;
+  }
+  .main-content {
+    padding:3rem;
+  }
+
+  .navbar {  
+    position: fixed;
+    
+    left: 0%;
+    right: 0%;
+    display:flex;
+    align-items: center; 
+    justify-content:space-between;   
+    padding: 20px 30px;
+    font-size:1.1rem;
+    background:var(--navbar-bg-color);
+    color:var(--navbar-color);
+  }
+  .navbar__links { 
+    display:flex;  
+    list-style: none;
+  }
+  .navbar__link { 
+    padding:0 10px;
+  }
+  .navbar__link > .link{ 
+    color:var(--navbar-color);
+    text-decoration:none;
+  }
+  .burger {
+    display:none;
+  }
+
+  @media screen and (max-width:600px) {
+    .navbar__links { 
+    
+      display:flex;
+      flex-direction:column;
+      width:0;
+      height:30%;  
+      position:absolute;
+      top:65px;
+      right:0;     
+      background:#72232C;     
+      transform: translateX(110%);
+      transition: all .5s ease-in-out;
+    }
+    .show-nav .navbar__links { 
+        top: 65%;
+      width:100vw;    
+      transform: translateX(0);
+    } 
+    .navbar__link {  
+      background-color: #72232C;
+    
+      transform: translateX(101%);
+      transition: all .5s ease-in-out;
+    }
+    
+    .show-nav .navbar__link  {        
+      transform: translateX(0);    
+    }   
+    .navbar__link > .link {
+      display:block;
+      padding:1rem;
+      font-size:1.6rem;
+      color:var(--navbar-color);  
+      transition: all .4s ease-in-out;
+    }
+    .navbar__link > .link:hover {
+      padding-left:2rem;
+      letter-spacing:5px;
+    }
+    
+    /* Toggle menu */
+    .burger {
+      display:block;
+      position:relative;
+      right: 10px;
+      padding:0;
+      width:45px;
+      height:45px;
+      border:none;
+      background:transparent;
+      cursor:pointer;
+    }
+    .bar {
+      display:block;    
+      width:45px;
+      height:4px;  
+      border-radius:3px;
+      background:var(--navbar-color); 
+      transition: all .5s ease-in-out;   
+    }
+    .bar::before, .bar::after {
+      content:"";
+      width:45px;
+      height:4px;
+      position:absolute; 
+      left:0;  
+      background:var(--navbar-color); 
+      border-radius:3px;    
+      transition: all .5s ease-in-out;
+    }
+    .bar::before {
+      transform:translateY(-12px)
+    }
+    .bar::after {
+      transform:translateY(12px)
+    }
+    .show-nav .bar {
+      width:0;
+      background:transparent;    
+    }
+    .show-nav .bar::before {
+      transform:rotate(45deg);
+    }
+    .show-nav .bar::after {
+      transform:rotate(-45deg);
+    }
+    
+    /* Bonus - Animations */
+    .show-nav .first {      
+      transition: all 1s ease-out;
+    } 
+    .show-nav .second {      
+      transition: all 1.1s ease-out;
+    } 
+    .show-nav .third {      
+      transition: all 1.2s ease-out;
+    } 
+    .show-nav .four {      
+      transition: all 1.3s ease-out;
+    } 
+    .show-nav .fifth {      
+      transition: all 1.4s ease-out;
+    }
+  }
+  /*  Medium device - Bonus */
+  @media screen and (min-width:600px) {
+    .navbar__link > .link::after {
+      display:block;
+      content:"";
+      width:0;
+      height:1px;
+      right: 20px;
+      background:var(--navbar-color);
+      transition:width .4s;
+    }
+    .navbar__link:hover > .link::after {
+      width:100%;
+    }
+    .navbar__links {
+        margin-right: 10%;
+        width: 80%;
+        justify-content: space-around;
+    }
+    .logo {
+        
+  margin-left: 20%;  }
+  }
+
+
+
+
+
+
+
+
+
     footer {
         color: white;
         background-color: rgb(0, 0, 0);
@@ -83,7 +280,7 @@
   
 }
 
-ul {
+.footerUl {
     
     list-style-type: none;
     display: flex;
@@ -94,17 +291,17 @@ ul {
     
     
 }
-li {
+.footerLi {
     text-align: center;
     line-height:32px;
     display: inline-block;
     cursor: pointer;   
 }
-a {
+.lien {
     text-decoration: none;
     color: white; 
 }
-a:hover {
+.lien:hover {
     display: block;
     color: white;
     font-weight: bold;
