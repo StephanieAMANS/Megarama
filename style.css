@@ -133,7 +133,7 @@ body {
     flex-wrap: wrap;
 }
 
-img {
+#imgitems {
     width: 150px;
     max-width: 100%;
     height: auto;
@@ -215,7 +215,7 @@ img {
       border: 1px solid black;
       display: flex;
       justify-content: space-around;
-  };
+  }
   
   #left-part { 
     display: flex;
@@ -282,7 +282,7 @@ img {
 
         }
 
-        img {
+        #imgitems {
             width: 280px;
             max-width: 100%;
             height: auto;
