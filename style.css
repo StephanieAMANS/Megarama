@@ -158,7 +158,124 @@ img {
     font-size: small;
     margin-left: 13%;
 }
+/** ajout du css contact **/
+.title-important {
+    text-align: center;
+  }
+  
+    label {  
+      line-height: 2;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      position: relative;
+      width: 90%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    
+    #button {
+      background: #72232C;
+      color: white;
+      border: none;
+      padding: 5px 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+  
+    .title {
+      text-align: center;
+    }
+  
+    .information {
+      margin-top: 20px;
+      margin-left: 5px;
+      line-height: 1.5;
+      list-style-type: disc;
+      margin-bottom: 20px;
+    }
+  
+    .acces{
+      margin-top: 15px;
+      list-style-type: circle;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    @media screen and (min-width: 768px) {
+  
+  .container {
+      margin-left: 850px;
+      width: 50%;
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-around;
+  };
+  
+  #left-part { 
+    display: flex;
+    flex-direction: column;
+    /*margin-left: 20%;*/
+    width: 50%;
+      /*width: 50px;
+      padding-top: 50px;*/
+    }
+    
+    label {
+      line-height: 2;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 80%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    
+    #button{
+      background: #72232C;
+      color: white;
+      border: none;
+      padding: 5px 20px;
+      text-align: center;
+      border-radius: 10px;;
+    }
+  
+    #right-part{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 50%;
+    }
+  
+    .information {
+      margin-top: 20px;
+      margin-right: 5px;
+      line-height: 1.5;
+      list-style-type: disc;
+      margin-bottom: 20px;
+    }
+  
+    .acces{
+      margin-top: 15px;
+      list-style-type: circle;
+    }
+  
+    .map {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
 
+/** fin du css contact **/
     @media screen and (min-width: 600px) {
 
         #actualfilms {
