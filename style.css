@@ -1,5 +1,6 @@
 
 
+
 .aff {
   margin-top:5%;
 }
@@ -33,7 +34,6 @@
 
   .navbar {  
     position: fixed;
-    
     left: 0%;
     right: 0%;
     display:flex;
@@ -206,13 +206,20 @@
         opacity: 0.8;
         font-size: smaller;
         }
+
+.container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
         
 
-    .footerContainer {
-        display: flex;
-        justify-content: space-around;
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
        
-    }
+}
 
 .logoMegarama {
     width: 50px;
@@ -310,17 +317,6 @@
     
 }
 
-@media only screen and (min-width: 600px) {
-  
-    .logoMegarama {
-        width: 200px;
-        max-width: 100%;
-        height: auto;
-        padding-top: 40px;
-        cursor: pointer;
-    }
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -356,118 +352,56 @@ body {
     margin-left: 13%;
 }
 /** ajout du css contact **/
+
 .title-important {
     text-align: center;
-  }
+}
   
-    label {  
-      line-height: 2;
-    }
+label {
+    line-height: 2;
+}
+
+input[type="text"],
+input[type="email"],
+
+textarea {
+    position: relative;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
     
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      position: relative;
-      width: 90%;
-      padding: 5px;
-      margin-bottom: 10px;
-    }
-    
-    #button {
-      background: #72232C;
-      color: white;
-      border: none;
-      padding: 5px 20px;
-      text-align: center;
-      border-radius: 10px;
-    }
+#button {
+    background: #72232C;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
   
-    .title {
-      text-align: center;
-    }
+.title {
+    text-align: center;
+}
   
-    .information {
-      margin-top: 20px;
-      margin-left: 5px;
-      line-height: 1.5;
-      list-style-type: disc;
-      margin-bottom: 20px;
-    }
+.information {
+    margin-top: 20px;
+    margin-left: 5px;
+    line-height: 1.5;
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
   
-    .acces{
-      margin-top: 15px;
-      list-style-type: circle;
-    }
+.acces{
+    margin-top: 15px;
+    list-style-type: circle;
+}
   
-    .map {
-      width: 100%;
-      height: auto;
-    }
-  
-    @media screen and (min-width: 768px) {
-  
-  .container {
-      margin-left: 850px;
-      width: 50%;
-      border: 1px solid black;
-      display: flex;
-      justify-content: space-around;
-  }
-  
-  #left-part { 
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    }
-    
-    label {
-      line-height: 2;
-    }
-    
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 80%;
-      padding: 5px;
-      margin-bottom: 10px;
-    }
-    
-    #button{
-      background: #72232C;
-      color: white;
-      border: none;
-      padding: 5px 20px;
-      text-align: center;
-      border-radius: 10px;;
-    }
-  
-    #right-part{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      width: 50%;
-    }
-  
-    .information {
-      margin-top: 20px;
-      margin-right: 5px;
-      line-height: 1.5;
-      list-style-type: disc;
-      margin-bottom: 20px;
-    }
-  
-    .acces{
-      margin-top: 15px;
-      list-style-type: circle;
-    }
-  
-    .map {
-      width: 100%;
-      height: auto;
-    }
-  }
-  
-  
+.map {
+    width: 100%;
+    height: auto;
+}
+
 
 /** fin du css contact **/
     @media screen and (min-width: 600px) {
@@ -496,5 +430,73 @@ body {
             -ms-transform: scale(1.05); /* IE 9 */
             -o-transform: scale(1.05); /* Opera */
             transform: scale(1.05);
+        }
+
+        .logoMegarama {
+            width: 200px;
+            max-width: 100%;
+            height: auto;
+            padding-top: 40px;
+            cursor: pointer;
+        }
+
+        .container {
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #left-part {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        label {
+            line-height: 2;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 80%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        #button {
+            background: #72232C;
+            color: white;
+            border: none;
+            padding: 5px 20px;
+            text-align: center;
+            border-radius: 10px;;
+        }
+
+        #right-part {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 50%;
+        }
+
+        .information {
+            margin-top: 20px;
+            margin-right: 5px;
+            line-height: 1.5;
+            list-style-type: disc;
+            margin-bottom: 20px;
+        }
+
+        .acces {
+            margin-top: 15px;
+            list-style-type: circle;
+        }
+
+        .map {
+            width: 100%;
+            height: auto;
         }
     }
