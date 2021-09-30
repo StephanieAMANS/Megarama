@@ -1,5 +1,4 @@
-let message = "Nous avons bien pris en compte votre demande. Nous vous recontacterons dès que possible."
-
+let message = "Essayez toujours ! Personne ne vous répondra 😜 ..."
 let button = document.getElementById("button");
 button.addEventListener("click", function (event) {
   event.preventDefault();
