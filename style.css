@@ -156,6 +156,10 @@ body {
       padding-top: 20%;
       
     }
+    #contact {
+      margin-top: 15%;
+      margin-bottom: 5%;
+  }
   }
   /*  Medium device - Bonus */
   @media screen and (min-width:600px) {
@@ -184,6 +188,10 @@ body {
       padding-top: 8%;
       
     }
+    #contact {
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
   }
 
 
