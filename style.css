@@ -199,15 +199,8 @@
         font-size: smaller;
         }
 
-.container {
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-}
 
-        
-
-.footerContainer {
+  .footerContainer {
     display: flex;
     justify-content: space-around;
        
@@ -349,27 +342,23 @@ body {
     text-align: center;
 }
   
-label {
+.contact-Form {
     line-height: 2;
-}
-
-input[type="text"],
-input[type="email"],
-
-textarea {
     position: relative;
     width: 90%;
     padding: 5px;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
     
-#button {
+.button {
     background: #72232C;
     color: white;
     border: none;
     padding: 5px 20px;
     text-align: center;
     border-radius: 10px;
+    margin-left: 10px;
 }
   
 .title {
@@ -382,6 +371,7 @@ textarea {
     line-height: 1.5;
     list-style-type: disc;
     margin-bottom: 20px;
+    text-align: center;
 }
   
 .acces{
@@ -394,8 +384,8 @@ textarea {
     height: auto;
 }
 
-
 /** fin du css contact **/
+
     @media screen and (min-width: 600px) {
 
         #actualfilms {
@@ -438,6 +428,8 @@ textarea {
             justify-content: space-around;
             margin-left: 10%;
             margin-right: 10%;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         #left-part {
@@ -446,25 +438,22 @@ textarea {
             width: 50%;
         }
 
-        label {
+        .contact-Form {
             line-height: 2;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
             width: 80%;
             padding: 5px;
             margin-bottom: 10px;
+            margin-left: 10px;
         }
 
-        #button {
+        .button {
             background: #72232C;
             color: white;
             border: none;
             padding: 5px 20px;
             text-align: center;
-            border-radius: 10px;;
+            border-radius: 10px;
+            margin-left: 10px;
         }
 
         #right-part {
@@ -480,6 +469,7 @@ textarea {
             line-height: 1.5;
             list-style-type: disc;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         .acces {
