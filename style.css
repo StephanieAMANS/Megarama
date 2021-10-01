@@ -1,16 +1,7 @@
 
 
-
-.aff {
-  margin-top:5%;
-}
-
-
-  .light-mode {
-    --navbar-color: yellow;
-    --navbar-bg-color: blue;  
-  }
-  .dark-mode {
+  
+  .open-mode {
     --navbar-color: white;
     --navbar-bg-color: #72232C;  
   }
@@ -33,6 +24,7 @@
   }
 
   .navbar {  
+    z-index: 1;
     position: fixed;
     left: 0%;
     right: 0%;
