@@ -1,4 +1,6 @@
-
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
   
   .open-mode {
@@ -15,19 +17,16 @@
     margin:0;
     padding:0;
   }
- 
-  body {
-    margin:0;
-  }
+
   .main-content {
     padding:3rem;
   }
 
-  .navbar {  
+  .navbar {
     z-index: 1;
     position: fixed;
-    left: 0%;
-    right: 0%;
+    left: 0;
+    right: 0;
     display:flex;
     align-items: center; 
     justify-content:space-between;   
@@ -50,6 +49,7 @@
   .burger {
     display:none;
   }
+
 
 
   
@@ -117,17 +117,19 @@
     color: white;
     font-weight: bold;  
 }
+/* Films à l'affiche*/
 
-body {
-    font-family: 'Open Sans', sans-serif;
+h1 {
+    font-size: large;
+    text-align: center;
+    margin-bottom: 20px;
 }
-#actualfilms {
+.actual-movies {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
-#imgitems {
+.films {
     width: 150px;
     max-width: 100%;
     height: auto;
@@ -137,16 +139,10 @@ body {
     -webkit-transition: .3s ease;
     transition: .3s ease;
 }
-
 .films:hover {
-    -webkit-transform:scale(1.05); /* Safari and Chrome */
-    -moz-transform:scale(1.05); /* Firefox */
-    -ms-transform:scale(1.05); /* IE 9 */
-    -o-transform:scale(1.05); /* Opera */
     transform:scale(1.05);
 }
-
-#actualFilmTitle {
+.actual-movies-title {
     display: flex;
     justify-content: flex-start;
     font-size: small;
@@ -204,14 +200,19 @@ body {
 
     @media screen and (min-width: 600px) {
 
-        #actualfilms {
+    /** Films à l'affiche **/
+
+        h1 {
+            font-size: xx-large;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .actual-movies {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-
         }
-
-        #imgitems {
+        .films {
             width: 280px;
             max-width: 100%;
             height: auto;
@@ -221,15 +222,15 @@ body {
             -webkit-transition: .3s ease;
             transition: .3s ease;
         }
-
         .films:hover {
-            -webkit-transform: scale(1.05); /* Safari and Chrome */
-            -moz-transform: scale(1.05); /* Firefox */
-            -ms-transform: scale(1.05); /* IE 9 */
-            -o-transform: scale(1.05); /* Opera */
             transform: scale(1.05);
         }
-
+        .actual-movies-title {
+            display: flex;
+            justify-content: flex-start;
+            font-size: large;
+            margin-left: 13%;
+        }
         .logoMegarama {
             width: 200px;
             max-width: 100%;
