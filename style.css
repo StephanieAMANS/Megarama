@@ -2,17 +2,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-
-.aff {
-  margin-top:5%;
-}
-
-
-  .light-mode {
-    --navbar-color: yellow;
-    --navbar-bg-color: blue;  
-  }
-  .dark-mode {
+  
+  .open-mode {
     --navbar-color: white;
     --navbar-bg-color: #72232C;  
   }
@@ -32,6 +23,7 @@ body {
   }
 
   .navbar {
+    z-index: 1;
     position: fixed;
     left: 0;
     right: 0;
@@ -41,17 +33,16 @@ body {
     padding: 20px 30px;
     font-size:1.1rem;
     background:var(--navbar-bg-color);
-    z-index:1;
     color:var(--navbar-color);
   }
-  .navbar__links { 
+  .navbar-links { 
     display:flex;  
     list-style: none;
   }
-  .navbar__link { 
+  .navbar-link { 
     padding:0 10px;
   }
-  .navbar__link > .link{ 
+  .navbar-link > .link{ 
     color:var(--navbar-color);
     text-decoration:none;
   }
@@ -60,7 +51,7 @@ body {
   }
 
   @media screen and (max-width:600px) {
-    .navbar__links { 
+    .navbar-links { 
     
       display:flex;
       flex-direction:column;
@@ -73,29 +64,29 @@ body {
       transform: translateX(110%);
       transition: all .5s ease-in-out;
     }
-    .show-nav .navbar__links { 
+    .show-nav .navbar-links { 
         top: 65%;
       width:100vw;    
       transform: translateX(0);
     } 
-    .navbar__link {  
+    .navbar-link {  
       background-color: #72232C;
     
       transform: translateX(101%);
       transition: all .5s ease-in-out;
     }
     
-    .show-nav .navbar__link  {        
+    .show-nav .navbar-link  {        
       transform: translateX(0);    
     }   
-    .navbar__link > .link {
+    .navbar-link > .link {
       display:block;
       padding:1rem;
       font-size:1.6rem;
       color:var(--navbar-color);  
       transition: all .4s ease-in-out;
     }
-    .navbar__link > .link:hover {
+    .navbar-link > .link:hover {
       padding-left:2rem;
       letter-spacing:5px;
     }
@@ -166,7 +157,7 @@ body {
   }
   /*  Medium device - Bonus */
   @media screen and (min-width:600px) {
-    .navbar__link > .link::after {
+    .navbar-link > .link::after {
       display:block;
       content:"";
       width:0;
@@ -175,10 +166,10 @@ body {
       background:var(--navbar-color);
       transition:width .4s;
     }
-    .navbar__link:hover > .link::after {
+    .navbar-link:hover > .link::after {
       width:100%;
     }
-    .navbar__links {
+    .navbar-links {
         margin-right: 10%;
         width: 80%;
         justify-content: space-around;
@@ -207,9 +198,7 @@ body {
         font-size: smaller;
         }
 
-        
-
-.footerContainer {
+  .footerContainer {
     display: flex;
     justify-content: space-around;
        
@@ -347,27 +336,23 @@ h1 {
     text-align: center;
 }
   
-label {
+.contact-Form {
     line-height: 2;
-}
-
-input[type="text"],
-input[type="email"],
-
-textarea {
     position: relative;
     width: 90%;
     padding: 5px;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
     
-#button {
+.button {
     background: #72232C;
     color: white;
     border: none;
     padding: 5px 20px;
     text-align: center;
     border-radius: 10px;
+    margin-left: 10px;
 }
   
 .title {
@@ -380,6 +365,7 @@ textarea {
     line-height: 1.5;
     list-style-type: disc;
     margin-bottom: 20px;
+    text-align: center;
 }
   
 .acces{
@@ -391,7 +377,6 @@ textarea {
     width: 100%;
     height: auto;
 }
-
 
 /** fin du css contact **/
 
@@ -442,6 +427,8 @@ textarea {
             justify-content: space-around;
             margin-left: 10%;
             margin-right: 10%;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         #left-part {
@@ -450,25 +437,22 @@ textarea {
             width: 50%;
         }
 
-        label {
+        .contact-Form {
             line-height: 2;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
             width: 80%;
             padding: 5px;
             margin-bottom: 10px;
+            margin-left: 10px;
         }
 
-        #button {
+        .button {
             background: #72232C;
             color: white;
             border: none;
             padding: 5px 20px;
             text-align: center;
-            border-radius: 10px;;
+            border-radius: 10px;
+            margin-left: 10px;
         }
 
         #right-part {
@@ -484,6 +468,7 @@ textarea {
             line-height: 1.5;
             list-style-type: disc;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         .acces {
