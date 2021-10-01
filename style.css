@@ -18,9 +18,7 @@ body {
     padding:0;
   }
 
-  .main-content {
-    padding:3rem;
-  }
+
 
   .navbar {
     z-index: 1;
@@ -154,6 +152,10 @@ body {
     .show-nav .fifth {      
       transition: all 1.4s ease-out;
     }
+    .sectionAffiche {
+      padding-top: 20%;
+      
+    }
   }
   /*  Medium device - Bonus */
   @media screen and (min-width:600px) {
@@ -176,7 +178,12 @@ body {
     }
     .logo {
         
-  margin-left: 20%;  }
+  margin-left: 20%;  
+    }
+    .sectionAffiche {
+      padding-top: 8%;
+      
+    }
   }
 
 
