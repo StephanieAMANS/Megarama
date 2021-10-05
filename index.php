@@ -18,7 +18,7 @@
     <ul class="navbar-links">
       <li class="navbar-link"><a class="link" href="#linkAffiche">Film à l'affiche</a></li>
       <li class="navbar-link"><a class="link" href="#">Prochainement</a></li>
-      <li class="navbar-link"><a class="link" href="#contact">Contact</a></li>
+      <li class="navbar-link"><a class="link" href="#contactForm">Contact</a></li>
     </ul>
     <button class="burger">
       <span class="bar"></span>  
@@ -45,13 +45,13 @@
 
 
 
-  <section id="contact">
+  
     
       <div class="container">
           <section class="appli">
 
-              <a class="andrImg"><img class="appliLogo" src="img/googlestore.png" alt="andrLogo"></a>
-              <a class="appleImg"><img class="appliLogo" src="img/applelogo.png" alt="appleLogo"></a>
+              <a href="https://play.google.com/store/apps/details?id=fr.erakys.cinepack.mobile.megarama2&hl=fr&gl=US" target="_blank"><img class="appliLogo" src="img/googlestore.png" alt="andrLogo"></a>
+              <a href="https://apps.apple.com/fr/app/cin%C3%A9mas-m%C3%A9garama/id1088585443" target="_blank"><img class="appliLogo" src="img/applelogo.png" alt="appleLogo"></a>
 
             
         
@@ -60,7 +60,7 @@
 
      
 
-  </section>
+  
 <section class="adressContainer">
   
     <div class="leftAdress">
@@ -78,13 +78,14 @@
         </ul>
       </ul>
       </div>
+      <div class="positionMap">
         <img class="map" src="img/plan-megarama-bordeaux.jpg" alt="map" >
-      
+      </div>
    
 
   </section>
   <div class="formulaire">
-    <!-- <h2 class="title-important">Contactez votre cinéma</h2> -->
+    <h2 class="title-important">Contactez votre cinéma</h2>
   <form id="contactForm">
 
     <label class="contact-Form" for="name">Nom:</label><br>
