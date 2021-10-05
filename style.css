@@ -176,7 +176,12 @@ body {
   }
   .logo {
       
-margin-left: 20%;  }
+margin-left: 20%;  
+}
+
+.andrLogo {
+  width: 10%;
+}
 }
 
 
@@ -425,16 +430,29 @@ h1 {
           border: 1px solid black;
           display: flex;
           justify-content: space-around;
-          margin-left: 10%;
-          margin-right: 10%;
-          margin-top: 50px;
-          margin-bottom: 50px;
-      }
+          padding: 3% 3%;
+          margin: 5% 10%;
+         
+      } 
 
+      .andrLogo {
+        width: 20%;
+      }
+      .appleLogo{
+        width: 20%;
+      }
+      .appli {
+        display: flex;
+        flex-direction: column;
+      }
       #left-part {
-          display: flex;
-          flex-direction: column;
           width: 50%;
+          
+      }
+      .adressContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 10%;  
       }
 
       .contact-Form {
@@ -459,7 +477,7 @@ h1 {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          width: 50%;
+          width: 40%;
       }
 
       .information {
