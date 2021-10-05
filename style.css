@@ -154,6 +154,26 @@ body {
   .show-nav .fifth {      
     transition: all 1.4s ease-out;
   }
+
+  .appliLogo {
+    width: 20%;
+  }
+  .map {
+    width: 80%;
+    height: auto;
+    margin: 5% 10%;
+  }
+  #contactForm {
+       
+    margin: 1% 0 5% 35%;
+  }
+  .contact-Form {
+      line-height: 1;
+      width: 50%;
+      padding: 5px;
+      margin-bottom: 10px;
+  }
+
 }
 /*  Medium device - Bonus */
 @media screen and (min-width:600px) {
@@ -179,8 +199,8 @@ body {
 margin-left: 20%;  
 }
 
-.andrLogo {
-  width: 10%;
+.appliLogo {
+  width: 20%;
 }
 }
 
@@ -341,14 +361,14 @@ h1 {
   text-align: center;
 }
 
-.contact-Form {
+/* .contact-Form {
   line-height: 2;
   position: relative;
   width: 90%;
   padding: 5px;
   margin-bottom: 10px;
   margin-left: 10px;
-}
+} */
   
 .button {
   background: #72232C;
@@ -378,17 +398,17 @@ h1 {
   list-style-type: circle;
 }
 
-.map {
-  width: 100%;
-  height: auto;
-}
+
 
 /** fin du css contact **/
 
   @media screen and (min-width: 600px) {
 
   /** Films à l'affiche **/
-
+  .map {
+    width: 60%;
+    height: auto;
+  }
       h1 {
           font-size: xx-large;
           text-align: center;
@@ -454,13 +474,15 @@ h1 {
         justify-content: space-between;
         padding: 2% 10%;  
       }
-
+      #contactForm {
+       
+        margin: 1% 0 5% 40%;
+      }
       .contact-Form {
           line-height: 2;
-          width: 80%;
+          width: 35%;
           padding: 5px;
           margin-bottom: 10px;
-          margin-left: 10px;
       }
 
       .button {
@@ -494,8 +516,5 @@ h1 {
           list-style-type: circle;
       }
 
-      .map {
-          width: 100%;
-          height: auto;
-      }
+    
   }
