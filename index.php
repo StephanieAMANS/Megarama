@@ -46,46 +46,19 @@
 
 
   <section id="contact">
-    <div id="anchor-contact"></div>
     
       <div class="container">
-        <div id="left-part"> 
           <section class="appli">
 
-              <a class="andrImg"><img class="andrLogo" src="img/googlestore.png" alt="andrLogo"></a>
-              <a class="appleImg"><img class="appleLogo" src="img/applelogo.png" alt="appleLogo"></a>
+              <a class="andrImg"><img class="appliLogo" src="img/googlestore.png" alt="andrLogo"></a>
+              <a class="appleImg"><img class="appliLogo" src="img/applelogo.png" alt="appleLogo"></a>
 
             
         
           </section>
         </div>
 
-        <div id="right-part">
-          <h2 class="title-important">Contactez votre cinéma</h2>
-  
-
-       
-          <form id="contactForm">
-
-            <label class="contact-Form" for="name">Nom:</label><br>
-             <input class="contact-Form" type="text" id="name" name="name" /><br>
-            <label class="contact-Form" for="email">Adresse email:</label><br>
-             <input class="contact-Form"
-               type="email"
-                id="email"
-                name="email"
-              /><br>
-            <label class="contact-Form" for="message">Message:</label><br />
-             <textarea class="contact-Form" id="message" name="message"></textarea>
-              <br /><br>
-
-           <button id="button" class="button">Envoyer</button>
-
-          </form>
-        
-        </div>
-
-    </div>
+     
 
   </section>
 <section class="adressContainer">
@@ -105,13 +78,32 @@
         </ul>
       </ul>
       </div>
-    <div class="rightAdress">
-        <img src="img/plan-megarama-bordeaux.jpg" alt="map" class="map" />
-      </div>
+        <img class="map" src="img/plan-megarama-bordeaux.jpg" alt="map" >
+      
    
 
   </section>
+  <div class="formulaire">
+    <!-- <h2 class="title-important">Contactez votre cinéma</h2> -->
+  <form id="contactForm">
 
+    <label class="contact-Form" for="name">Nom:</label><br>
+     <input class="contact-Form" type="text" id="name" name="name" /><br>
+    <label class="contact-Form" for="email">Adresse email:</label><br>
+     <input class="contact-Form"
+       type="email"
+        id="email"
+        name="email"
+      /><br>
+    <label class="contact-Form" for="message">Message:</label><br />
+     <textarea class="contact-Form" id="message" name="message"></textarea>
+      <br /><br>
+
+   <button id="button" class="button">Envoyer</button>
+
+  </form>
+
+  </div>
 <script src ="script.js"></script>
 
 
