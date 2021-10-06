@@ -10,8 +10,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
     </style>
+    <link rel="shortcut icon" type="image/x-icon" href="logoOnglet.png" />
 </head>
 <body>
+  
   <div id="anchor-navbar"></div>
   <nav class="navbar open-mode" role="navigation">
     <div class="navbar-logo"><img class="logo" src="img/logo-megarama-bordeaux-bastide.png" alt="logo"></div>    
@@ -24,6 +26,7 @@
       <span class="bar"></span>  
     </button>   
   </nav>
+  
   <section class="sectionAffiche" id="linkAffiche">
     <div id="anchor-actual-movies"></div>
       <h1> Bienvenue au Mégarama de Bordeaux</h1>
@@ -107,7 +110,7 @@
   </div>
 <script src ="script.js"></script>
 
-
+</div>
 <footer>
    <?php
    require("footer.php"); ?>
