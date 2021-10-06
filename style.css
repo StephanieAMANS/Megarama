@@ -329,14 +329,45 @@ transform: rotate(-15deg);
     -moz-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
+.overlay-details2 {
+    position: absolute;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
 
 .overlay:hover .overlay-details{
+    top: 73%;
+    left: 50%;
+    opacity: 1;
+}
+.overlay:hover .overlay-details2{
     top: 80%;
     left: 50%;
     opacity: 1;
 }
 
+
 .overlay-details h3{
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #72232C;
+    font-size: 16px;
+    border: 0 solid black;
+    border-radius: 6px;
+}
+.overlay-details2 h3{
     color: white;
     font-weight: bolder;
     text-transform: uppercase;
@@ -366,6 +397,9 @@ h1 {
 }
 
 .overlay-bottom{
+    top: 73%;
+}
+.overlay-bottom2{
     top: 80%;
 }
 
@@ -482,6 +516,9 @@ h1 {
       .overlay-details {
           width: 50%;
       }
+      .overlay-details2 {
+          width: 50%;
+      }
 
       .link-movies {
           width: 280px;
@@ -498,7 +535,7 @@ h1 {
           transition: .3s ease;
       }
       .films:hover {
-          transform: scale(1.05);
+          transform: scale(1.03);
       }
       .actual-movies-title {
           display: flex;

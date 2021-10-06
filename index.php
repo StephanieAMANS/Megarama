@@ -33,7 +33,7 @@
 
     <section id="sectionAffiche" class="sectionAffiche">
         <h1> Bienvenue au Mégarama de Bordeaux</h1>
-        <h2 class = "actual-movies-title">à l'affiche</h2>
+        <h2 class = "actual-movies-title">. à l'affiche</h2>
         <div class = "actual-movies">
             <?php foreach ($actualMovies as $key => $movieDetails): ?>
                 <div class="overlay">
@@ -44,6 +44,12 @@
                             <h3 class="overlay-title">+ d'infos</h3>
                         </div>
                     </a>
+                    <a class="link-movies2" href="http://bordeaux.megarama.fr/FR/achat-place" target="blank">
+                        <div class="overlay-details2 overlay-bottom2">
+                            <h3 class="overlay-title2">réserver</h3>
+                        </div>
+                    </a>
+
                 </div>
             <?php endforeach; ?>
         </div>
