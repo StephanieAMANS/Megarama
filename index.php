@@ -83,10 +83,11 @@
 
 
   <div class="formulaire">
+ 
     <h2 class="title-important">Contactez votre cinéma</h2>
-        <form id="contactForm">
-            <label class="contact-Form" for="name">Nom:</label><br>
-            <input class="contact-Form" type="text" id="name" name="name" /><br>
+        <form id="contactForm" method="post">
+            <label class="contact-Form" for="test">Nom:</label><br>
+            <input class="contact-Form" type="text" id="test" name="test" /><br>
             <label class="contact-Form" for="email">Adresse email:</label><br>
             <input class="contact-Form"
                   type="email"
