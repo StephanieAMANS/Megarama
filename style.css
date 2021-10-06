@@ -15,7 +15,7 @@ body {
 * {
   box-sizing:border-box; 
   outline:none;
-  margin:0;
+    margin: 0;
   padding:0;
 }
 
@@ -183,14 +183,14 @@ body {
     padding-top: 10%;
   }
   .sectionAffiche {
-    padding-top: 20%;
+    padding-top: 30%;
   }
   .phone {
     width: 100px;
   }
   .appli {
     display: flex;
-    margin-left: 20%;
+    margin: 10% 0 5% 18%;
   
   }
   .linkAppli {
@@ -333,35 +333,88 @@ transform: rotate(-15deg);
 
 /* Films à l'affiche*/
 
+
+.overlay-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.overlay:hover .overlay-details{
+    top: 80%;
+    left: 50%;
+    opacity: 1;
+}
+
+.overlay-details h3{
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #72232C;
+    font-size: 16px;
+    border: 0 solid black;
+    border-radius: 6px;
+}
+
 h1 {
-  font-size: large;
-  text-align: center;
-  margin-bottom: 20px;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 20px;
 }
+
 .actual-movies {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+.overlay {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.overlay-bottom{
+    top: 80%;
+}
+
+.link-movies {
+    width: 150px;
+    margin: 4px;
+}
+
 .films {
-  width: 150px;
-  max-width: 100%;
-  height: auto;
-  margin: 10px;
-  border: 0 solid black;
-  border-radius: 6px;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+    width: 150px;
+    max-width: 100%;
+    height: 100%;
+    border: 0 solid black;
+    border-radius: 6px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
 }
 .films:hover {
-  transform:scale(1.05);
+    transform:scale(1.05);
+    opacity: 0.8;
 }
 .actual-movies-title {
-  display: flex;
-  justify-content: flex-start;
-  font-size: small;
-  margin-left: 13%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: small;
+    margin-left: 13%;
 }
+
 /** ajout du css contact **/
 
 .title-important {
@@ -431,11 +484,16 @@ h1 {
           justify-content: center;
           flex-wrap: wrap;
       }
+
+      .link-movies {
+          width: 280px;
+          margin: 10px;
+
+      }
       .films {
           width: 280px;
           max-width: 100%;
-          height: auto;
-          margin: 10px;
+          height: 100%;
           border: 0 solid black;
           border-radius: 6px;
           -webkit-transition: .3s ease;
@@ -550,7 +608,8 @@ h1 {
       }
       .appli {
         display: flex;
-        margin-left: 40%;
+      
+        margin: 5% 0 5% 40%;
       
       }
       .linkAppli {
