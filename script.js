@@ -17,7 +17,7 @@ var dateTime = date+' à '+time;
 
 window.onload = function(){
   document.getElementById('button').onclick = function(e){
-      alert ("Bonjour " + (document.getElementById("test").value) + ", votre message: " + document.getElementById("message").value + " a bien été envoyé le " + dateTime);
+      alert ("Bonjour " + (document.getElementById("test").value) + ", votre message: \"" + document.getElementById("message").value + "\" a bien été envoyé le " + dateTime);
       return false;
   }
 }
