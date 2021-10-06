@@ -22,43 +22,41 @@
 </nav>
 
 <div class=" all-body">
-                <div class="first-part-body"></div>
-                <div class="second-part-body">
+    <div class="first-part-body"></div>
+    <div class="second-part-body">
+        <section id="sectionAffiche" class="sectionAffiche">
+            <h1> Bienvenue au Mégarama de Bordeaux</h1>
+            <h2 class = "actual-movies-title">. à l'affiche</h2>
+            <div class = "actual-movies">
+                <?php foreach ($actualMovies as $key => $movieDetails): ?>
+                    <div class="overlay">
+                        <a class="link-movies" href="<?= $movieDetails['synopsis']?>" target="_blank">
+                            <div class="content-overlay"></div>
+                            <img class="films" src="<?= $movieDetails['img']?>" alt="<?= $movieDetails['title']?>">
+                            <div class="overlay-details overlay-bottom">
+                                <h3 class="overlay-title">+ d'infos</h3>
+                            </div>
+                        </a>
+                        <a class="link-movies2" href="http://bordeaux.megarama.fr/FR/achat-place" target="blank">
+                            <div class="overlay-details2 overlay-bottom2">
+                                <h3 class="overlay-title2">réserver</h3>
+                            </div>
+                        </a>
 
-                    <section id="sectionAffiche" class="sectionAffiche">
-                        <h1> Bienvenue au Mégarama de Bordeaux</h1>
-                        <h2 class = "actual-movies-title">. à l'affiche</h2>
-                        <div class = "actual-movies">
-                            <?php foreach ($actualMovies as $key => $movieDetails): ?>
-                                <div class="overlay">
-                                    <a class="link-movies" href="<?= $movieDetails['synopsis']?>" target="_blank">
-                                        <div class="content-overlay"></div>
-                                        <img class="films" src="<?= $movieDetails['img']?>" alt="<?= $movieDetails['title']?>">
-                                        <div class="overlay-details overlay-bottom">
-                                            <h3 class="overlay-title">+ d'infos</h3>
-                                        </div>
-                                    </a>
-                                    <a class="link-movies2" href="http://bordeaux.megarama.fr/FR/achat-place" target="blank">
-                                        <div class="overlay-details2 overlay-bottom2">
-                                            <h3 class="overlay-title2">réserver</h3>
-                                        </div>
-                                    </a>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </section>
 
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                    </section>
-
-<section class="appli">
-    <div class="linkAppli">
-        <h2>Application Megarama</h2>
-        <p class="txtAppli">L'appli qui vous emmène au cinéma</p>
-        <a href="https://play.google.com/store/apps/details?id=fr.erakys.cinepack.mobile.megarama2&hl=fr&gl=US" target="_blank"><img class="appliLogo" src="img/googlestore.png" alt="andrLogo"></a>
-        <a href="https://apps.apple.com/fr/app/cin%C3%A9mas-m%C3%A9garama/id1088585443" target="_blank"><img class="appliLogo" src="img/applelogo.png" alt="appleLogo"></a>
-    </div>
-
-    <div class="phoneAppli">
-       <img class="phone" src="img/appliphone.png" alt="appliPhone">
+    <section class="appli">
+        <div class="linkAppli">
+          <h2>Application Megarama</h2>
+          <p class="txtAppli">L'appli qui vous emmène au cinéma</p>
+            <a href="https://play.google.com/store/apps/details?id=fr.erakys.cinepack.mobile.megarama2&hl=fr&gl=US" target="_blank"><img class="appliLogo" src="img/googlestore.png" alt="andrLogo"></a>
+            <a href="https://apps.apple.com/fr/app/cin%C3%A9mas-m%C3%A9garama/id1088585443" target="_blank"><img class="appliLogo" src="img/applelogo.png" alt="appleLogo"></a>
+        </div>
+        <div class="phoneAppli">
+            <img class="phone" src="img/appliphone.png" alt="appliPhone">
     </div>
   </section>
   
@@ -87,7 +85,7 @@
   </section>
 
 
-  <div class="formulaire">
+  <div id="formulaire" class="formulaire">
  
     <h2 class="title-important">Contactez votre cinéma</h2>
         <form id="contactForm" method="post">
