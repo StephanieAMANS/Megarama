@@ -1,12 +1,12 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 
 .open-mode {
   --navbar-color: white;
-  --navbar-bg-color: #72232C;  
+  --navbar-bg-color: #72232C;
 }
 .logo {
     width: 25%;
@@ -338,7 +338,7 @@ transform: rotate(-15deg);
 
 .overlay-details h3{
     color: white;
-    font-weight: 500;
+    font-weight: bolder;
     text-transform: uppercase;
     background-color: #72232C;
     font-size: 16px;
@@ -453,6 +453,22 @@ h1 {
     margin-top: 4%;
     margin-left: 5%;
   }
+  body {
+      background-color: #f3f3f3;
+  }
+      .all-body {
+          display: flex;
+      }
+      .first-part-body {
+          width: 8%;
+      }
+      .second-part-body {
+          background-color: white;
+          width: 84%;
+      }
+      .third-part-body {
+          width: 8%;
+      }
       h1 {
           font-size: xx-large;
           text-align: center;
@@ -462,6 +478,9 @@ h1 {
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
+      }
+      .overlay-details {
+          width: 50%;
       }
 
       .link-movies {
@@ -496,8 +515,7 @@ h1 {
       }
 
       .container {
-          border: 5px solid black;
-          border-style: inset;
+          border: 5px inset black;
           display: flex;
           justify-content: space-around;
           padding: 3% 3%;
