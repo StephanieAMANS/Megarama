@@ -26,7 +26,7 @@
     <div class="second-part-body">
         <section id="sectionAffiche" class="sectionAffiche">
             <h1> Bienvenue au Mégarama de Bordeaux</h1>
-            <h2 class = "actual-movies-title">. à l'affiche</h2>
+            <h2 class = "actual-movies-title">à l'affiche</h2>
             <div class = "actual-movies">
                 <?php foreach ($actualMovies as $key => $movieDetails): ?>
                     <div class="overlay">
@@ -50,69 +50,67 @@
 
     <section class="appli">
         <div class="linkAppli">
-          <h2>Application Megarama</h2>
-          <p class="txtAppli">L'appli qui vous emmène au cinéma</p>
+            <h2>Application Megarama</h2>
+            <p class="txtAppli">L'appli qui vous emmène au cinéma</p>
             <a href="https://play.google.com/store/apps/details?id=fr.erakys.cinepack.mobile.megarama2&hl=fr&gl=US" target="_blank"><img class="appliLogo" src="img/googlestore.png" alt="andrLogo"></a>
             <a href="https://apps.apple.com/fr/app/cin%C3%A9mas-m%C3%A9garama/id1088585443" target="_blank"><img class="appliLogo" src="img/applelogo.png" alt="appleLogo"></a>
         </div>
         <div class="phoneAppli">
             <img class="phone" src="img/appliphone.png" alt="appliPhone">
-    </div>
-  </section>
+        </div>
+    </section>
   
 
 
 
-  <section class="adressContainer">
-      <div class="leftAdress">
-        <h3 class="title">Adresse<br>Megarama Bordeaux</h3>
-          <ul class="information">
-              <li>7 Quai des Queyries<br>33100 Bordeaux</li>
-              <li>Téléphone : 05 56 40 66 70</li>   
-              <li>Moyens d'accés :</li>
-                <ul class="acces">
+     <section class="adressContainer">
+         <div class="leftAdress">
+             <h3 class="title">Adresse<br>Megarama Bordeaux</h3>
+             <ul class="information">
+                 <li>7 Quai des Queyries<br>33100 Bordeaux</li>
+                 <li>Téléphone : 05 56 40 66 70</li>
+                 <li>Moyens d'accés :</li>
+                 <ul class="acces">
                     <li>Accés tramway Ligne A, arrêt Stalingrad</li>
                     <li>Batcub arrêt Pont de Pierre</li>
                     <li>Stations Vcub et BlueCub à proximité</li>
                     <li>Lignes de bus 10/16/27/28/45/80/91/92, arrêt Stalingrad</li>
                 </ul>
-          </ul>
-      </div>
-      
-      <div class="positionMap">
-          <img class="map" src="img/plan-megarama-bordeaux.jpg" alt="map" >
-      </div>
-  </section>
+             </ul>
+         </div>
 
+         <div class="positionMap">
+             <img class="map" src="img/plan-megarama-bordeaux.jpg" alt="map" >
+         </div>
+     </section>
 
-  <div id="formulaire" class="formulaire">
- 
-    <h2 class="title-important">Contactez votre cinéma</h2>
-        <form id="contactForm" method="post">
-            <label class="contact-Form" for="test">Nom:</label><br>
-            <input class="contact-Form" type="text" id="test" name="test" /><br>
-            <label class="contact-Form" for="email">Adresse email:</label><br>
-            <input class="contact-Form"
-                  type="email"
-                  id="email"
-                  name="email"
-            /><br>
-            <label class="contact-Form" for="message">Message:</label><br />
-            <textarea class="contact-Form" id="message" name="message"></textarea>
-            <br /><br>
-            <button id="button" class="button">Envoyer</button>
-        </form>
-    </div>
+        <div id="formulaire" class="formulaire">
+            <h2 class="title-important">Contactez votre cinéma</h2>
+            <form id="contactForm" method="post">
+                <label class="contact-Form" for="test">Nom:</label><br>
+                <input class="contact-Form" type="text" id="test" name="test" /><br>
+                <label class="contact-Form" for="email">Adresse email:</label><br>
+                <input class="contact-Form"
+                       type="email"
+                       id="email"
+                       name="email"
+                /><br>
+                <label class="contact-Form" for="message">Message:</label><br />
+                <textarea class="contact-Form" id="message" name="message"></textarea>
+                <br /><br>
+                <button id="button" class="button">Envoyer</button>
+            </form>
+        </div>
     </div>
     <div class="third-part-body"></div>
 </div>
 
-  <footer>
-      <?php
-        require("footer.php"); 
-      ?>  
-  </footer>
+<footer>
+    <?php
+    require("footer.php");
+    ?>
+</footer>
 
-  <script src ="script.js"></script>
+<script src ="script.js"></script>
 </body>
 </html>

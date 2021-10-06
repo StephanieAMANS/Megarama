@@ -210,6 +210,7 @@ body {
 
 }
 /*  Medium device - Bonus */
+
 @media screen and (min-width:600px) {
   .navbar-link > .link::after {
     display:block;
@@ -368,7 +369,7 @@ transform: rotate(-15deg);
 }
 
 .overlay:hover .overlay-details{
-    top: 73%;
+    top: 70%;
     left: 50%;
     opacity: 1;
 }
@@ -384,7 +385,9 @@ transform: rotate(-15deg);
     font-weight: bolder;
     text-transform: uppercase;
     background-color: #72232C;
-    font-size: 16px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 11px;
     border: 0 solid black;
     border-radius: 6px;
 }
@@ -393,7 +396,9 @@ transform: rotate(-15deg);
     font-weight: bolder;
     text-transform: uppercase;
     background-color: #72232C;
-    font-size: 16px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 11px;
     border: 0 solid black;
     border-radius: 6px;
 }
@@ -418,7 +423,7 @@ h1 {
 }
 
 .overlay-bottom{
-    top: 73%;
+    top: 70%;
 }
 .overlay-bottom2{
     top: 80%;
@@ -534,11 +539,33 @@ h1 {
           justify-content: center;
           flex-wrap: wrap;
       }
+      .overlay:hover .overlay-details {
+          top: 73%;
+      }
+      .overlay:hover .overlay-details2 {
+          top:80%;
+      }
       .overlay-details {
           width: 50%;
       }
       .overlay-details2 {
           width: 50%;
+      }
+      .overlay-details h3{
+          font-size: 16px;
+          margin-right: 0;
+          margin-left: 0;
+      }
+      .overlay-details2 h3 {
+          font-size: 16px;
+          margin-right: 0;
+          margin-left: 0;
+      }
+      .overlay-bottom{
+          top: 73%;
+      }
+      .overlay-bottom2{
+          top: 80%;
       }
 
       .link-movies {
