@@ -10,6 +10,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
     </style>
+    <link rel="shortcut icon" type="image/x-icon" href="logoOnglet.png" />
 </head>
 <body>
 
