@@ -515,14 +515,14 @@ h1 {
           display: flex;
       }
       .first-part-body {
-          width: 8%;
+          width: 12%;
       }
       .second-part-body {
           background-color: white;
-          width: 84%;
+          width: 76%;
       }
       .third-part-body {
-          width: 8%;
+          width: 12%;
       }
       h1 {
           font-size: xx-large;
