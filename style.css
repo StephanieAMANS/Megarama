@@ -52,6 +52,7 @@ body {
   display:none;
 }
 
+
 @media screen and (max-width:600px) {
   .navbar-links { 
   
@@ -185,6 +186,28 @@ body {
   .sectionAffiche {
     padding-top: 30%;
   }
+  .phone {
+    width: 100px;
+  }
+  .appli {
+    display: flex;
+    margin: 10% 0 5% 18%;
+  
+  }
+  .linkAppli {
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+  
+  }
+  .appliLogo {
+    width: 120px;
+    padding-top: 2%;
+  }
+  .txtAppli {
+    padding-top: 3%;
+  }
 
 }
 /*  Medium device - Bonus */
@@ -211,9 +234,7 @@ body {
 margin-left: 20%;  
 }
 
-.appliLogo {
-  width: 20%;
-}
+
 }
 
 footer {
@@ -496,6 +517,7 @@ h1 {
           cursor: pointer;
       }
 
+
       .container {
           border: 5px solid black;
           border-style: inset;
@@ -512,10 +534,7 @@ h1 {
       .appleLogo{
         width: 20%;
       }
-      .appli {
-        display: flex;
-        flex-direction: column;
-      }
+      
       #left-part {
           width: 50%;
           
@@ -584,6 +603,29 @@ h1 {
       .formulaire {
         padding-top: 2%;
         margin-left: 1%;
+      }
+      .phone {
+        width: 100px;
+      }
+      .appli {
+        display: flex;
+      
+        margin: 5% 0 5% 40%;
+      
+      }
+      .linkAppli {
+        padding-top: 1%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 5%;
+      
+      }
+      .appliLogo {
+        width: 120px;
+        padding-top: 2%;
+      }
+      .txtAppli {
+        padding-top: 3%;
       }
 
     
